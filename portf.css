@@ -8,6 +8,33 @@ body {
     background: var(--body-background-color);
     background-image: url(./night.jpeg);
   }*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+section {
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background: linear-gradient (-45deg, #fff000, #e73c7e, #eeba8d);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
   
 h1 {
     color: #f1ebeb;
@@ -128,9 +155,7 @@ h1 {
     width:100%;
     height:100%;
   }
-  section: :nth-child(2) {
-  grid-area: head;
-}
+
   #contact-info {
     display: flex;
     justify-content: center;
@@ -245,10 +270,10 @@ h1 {
 nav {
   margin: 0;
   padding: 0;
-  background-color: rgb(226, 169, 63);
+  background-color: #ffffff;
   position: absolute;
   top: 50%;
-  left: 91%;
+  left: 0%;
   transfrom: translate(-50%, -50%);
 }
 
@@ -267,26 +292,26 @@ a {
   width: 100%;
   padding: 20px;
   text-decoration: none;
-  color: aqua;
+  color: #ff8400;
   box-sizing: border-box;
   z-index: 2;
   position: relative;
 
 }
 a:hover {
-  color: #dc24c6;
+  color: #ff8400;
 }
 
 li:first-child a{
-border-left: 10px solid #00ff00;
+border-left: 10px solid #ffffff;
 }
 
 li:nth-child(2) a{
-  border-left: 10px solid red;
+  border-left: 10px solid rgb(255, 255, 255);
 }
 
 li:last-child a{
-    border-left: 10px solid #0004ff;
+    border-left: 10px solid #ffffff;
 }
 
 a::after {
@@ -305,11 +330,11 @@ a:hover::After {
 }
 
 li:first-child a::after {
-  background-color: rgb(134, 45, 45);
+  background-color: #eeba8d;
 }
 li:nth-child(2) a::after {
-  background-color: chartreuse;
+  background-color: #eeba8d;
 }
 li:last-child a::after {
-  background-color: cyan;
+  background-color: #eeba8d;
 }
