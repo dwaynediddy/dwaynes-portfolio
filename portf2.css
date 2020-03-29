@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    height: 100vh;
+    border: 20px solid red;
+}
+
+.child1{
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+
+.child2{
+    width: 200px;
+    height: 200px;
+    background: green;
+}
+
+.child1{
+    width: 200px;
+    height: 200px;
+    background: pink;
+}
