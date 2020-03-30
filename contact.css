@@ -1,5 +1,11 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+:root {
+     --background: rgb(255, 140, 0.5); 
 }
 
 body {
@@ -8,7 +14,163 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: ;
+    
 }
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+
+}
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: " ";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 120ms ease-in-out;
+}
+
+nav a:hover {
+    color: pink;
+    
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: "";
+    }
+    
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+    }
+
+    .logo {
+        grid-column:  2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: " ";
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: 0em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+
+    }
+
+nav a:hover ::before {
+    transform:  scale(1, 1);
+}
+
+}
+/* navbar finish*/
 
 .message {
     width: 800px;
@@ -28,14 +190,14 @@ body {
     flex-direction: column;
     order: 2;
 }
-
+/*not responsive! ffs want it to go unter email on phone or small tablet*/
 .message-area > textarea { 
     flex: 1;
     min-width: 18em;
     background: transparent;
     color: whitesmoke;
     padding: 15px;
-
+    flex-wrap: wrap;
 }
 
 .add-details {
@@ -61,12 +223,12 @@ body {
 .add-details button {
     background: rgb(255, 119, 0);
     color: #eeeeee;
-    border: 0;
+    border: 1;
     padding: 15px 50px;
     font-family: poppins;
     font-size: 18px;
     text-transform: uppercase;
-    border-radius: 10%;
+    border-radius: 40px;
 }
 
 label {
@@ -75,3 +237,4 @@ label {
     line-height: 40px;
     font-family: ;
 }
+
