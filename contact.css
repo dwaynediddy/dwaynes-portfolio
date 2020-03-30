@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./contact-bg.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: ;
+}
+
+.message {
+    width: 800px;
+    margin: 5% auto;
+
+}
+
+.form-area{
+    display: flex;
+    background: rgb(0, 0, 0, 0.8);
+    border-radius: ;
+    padding: 2em;
+}
+
+.message-area {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.message-area > textarea { 
+    flex: 1;
+    min-width: 18em;
+    background: transparent;
+    color: whitesmoke;
+    padding: 15px;
+
+}
+
+.add-details {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+
+.add-details input {
+    width: 100%;
+    background: transparent;
+    color: whitesmoke;
+    border-radius:  40px;
+
+}
+
+.add-details input,
+.add-details button {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.add-details button {
+    background: rgb(255, 119, 0);
+    color: #eeeeee;
+    border: 0;
+    padding: 15px 50px;
+    font-family: poppins;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+
+label {
+    color: whitesmoke;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: ;
+}
