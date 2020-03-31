@@ -1,7 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 1;
-    padding: 0; 
+    margin: 1px;
+    padding: 1px; 
 }
 
 :root {
@@ -9,11 +9,9 @@
 }
 
 body {
-    background-image: url(./contact-bg.jpeg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    background-repeat: ;
     
 }
 
@@ -76,6 +74,7 @@ nav {
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
+    z-index: 999;
 }
 
 nav ul {
@@ -114,7 +113,7 @@ nav li {
 
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
-        display: "";
+        display: " ";
     }
     
     header{
@@ -127,11 +126,12 @@ nav li {
     }
 
     nav {
-        all: unset;
+        fill: unset;
         grid-column: 3 / 4;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
 
     }
 
@@ -162,7 +162,7 @@ nav li {
         right: 0;
         transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
-
+        
     }
 
 nav a:hover ::before {
@@ -172,69 +172,77 @@ nav a:hover ::before {
 }
 /* navbar finish*/
 
-.message {
-    width: 800px;
-    margin: 5% auto;
-    display: flex;
-}
 
-.form-area{
+.box-area {
     display: flex;
-    background: rgb(0, 0, 0, 0.8);
-    border-radius: ;
-    padding: 2em;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-.message-area {
+}
+.single-box {
+    position: relative;
     display: flex;
     flex-direction: column;
-    order: 2;
-}
-/*not responsive! ffs want it to go under email on phone or small tablet*/
-.message-area > textarea { 
-    flex: 1;
-    min-width: 18em;
-    background: transparent;
-    color: whitesmoke;
-    padding: 15px;
-    flex-wrap: wrap;
-}
-
-.add-details {
-    flex: 1;
-    order: 1;
-    margin-right: 2em;
+    align-items: row;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
 }
 
-.add-details input {
-    width: 100%;
-    background: transparent;
-    color: whitesmoke;
-    border-radius:  40px;
-
+.img-area {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    width:  80px;
+    height: 80px;
+    border: 6px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
-.add-details input,
-.add-details button {
-    padding: 1em;
-    margin-bottom: 1em;
+.single-box::nth-child(1) .img-area {
+    background-image: url( .jpeg);
 }
 
-.add-details button {
-    background: rgb(255, 119, 0);
-    color: #eeeeee;
-    border: 1;
-    padding: 15px 50px;
+.single-box::nth-child(2) .img-area {
+    background-image: url( .jpeg);
+}
+
+
+.single-box::nth-child(3) .img-area {
+    background-image: url( .jpeg);
+}
+
+.top-text {
+font-size: ;
+font-weight: ;
+line-height: 48px;
+}
+
+.img-text {
     font-family: poppins;
-    font-size: 18px;
-    text-transform: uppercase;
-    border-radius: 40px;
+    padding-top: 20px;
 }
 
-label {
-    color: whitesmoke;
-    text-transform: uppercase;
-    line-height: 40px;
-    font-family: ;
+.img-text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px; 
 }
 
+.single-box:hover{
+    background: pink;
+    color: pink;
+}
+  
