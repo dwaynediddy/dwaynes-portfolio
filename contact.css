@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(contact-bg.jpeg);
+    background-image: url(./src/images/contact-bg.jpeg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
