@@ -154,6 +154,8 @@ h1 {
     }
 
   }
+
+  /* end animation */
   
   html, body, #contact-info {
     width:100%;
@@ -291,7 +293,7 @@ li {
   width: 100%;
 }
 
-a {
+.cover-nav a {
   display: block;
   width: 100%;
   padding: 20px;
@@ -302,12 +304,12 @@ a {
   position: relative;
 
 }
-a:hover {
+.cover-nav a:hover {
   color: #ff8400;
 }
 
 
-a::after {
+.cover-nav a::after {
   content: "";
   height: 100px;
   width: 0px;
@@ -318,7 +320,7 @@ a::after {
   z-index: -1;
 }
 
-a:hover::After {
+.cover-nav a:hover::After {
   width: 100%; 
 }
 
@@ -326,6 +328,9 @@ li:first-child a::after {
   background-color: #eeba8d;
 }
 li:nth-child(2) a::after {
+  background-color: #eeba8d;
+}
+li:nth-child(3) a::after {
   background-color: #eeba8d;
 }
 li:last-child a::after {

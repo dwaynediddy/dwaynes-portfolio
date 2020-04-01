@@ -2,6 +2,7 @@
 
 .second-page {
     font-family: sans-serif;
+    background-color: rgb(213, 208, 208);
     margin: 0;
     display: grid;
     grid-template-columns: 30% auto;
@@ -20,21 +21,18 @@ footer {
 }
 
 header {
-    background: blueviolet;
+    background: rgb(255, 119, 0);
     grid-area: head;
    
 }
 
 aside {
-    background: red;
+    background: rgba(77, 77, 77, 0.05);
     grid-area: side;
+   
 
 }
 
-footer {
-    background: grey;
-    grid-area: footer;
-}
 
 .second-page-nav {
     list-style: none;
@@ -63,11 +61,8 @@ footer {
 
 }
 
-.footer-nav{
-    list-style: none;
-    margin: 0;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.sidesocials {
+    color: orange;
 }
+
+

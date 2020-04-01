@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
+        
         <h1 class="logo"></h1>    
         <input type="checkbox" id='nav-toggle' class="nav-toggle">
         <nav>
@@ -25,25 +27,36 @@
 
 
     <div class="mesasge">
-        <form action="" class="form-area">
+            <form
+        action="https://formspree.io/burrows.dwayne@icloud.com" 
+        method="POST" class="form-area">
             <div class="message-area">
                 <label for="mesasge">Get in touch!</label>
-                <textarea id="message-box"></textarea>
+                <textarea name="message-box"></textarea>
             </div>
             <div class="add-details">
                 <label for="firstname">First name</label>
-                <input type="text" name="" id="firstname">
+                <input type="text" name="firstname" id="firstname">
 
                 <label for="lastname">Last name</label>
-                <input type="text" name="" id="lastname">
+                <input type="text" name="lastname" id="lastname">
 
                 <label for="email">Enter you Email</label>
-                <input type="email" name="" id="email">
+                <input type="email" name="Email" id="email">
+                <!-- <textarea name="message"></textarea> -->
 
                 <button type="submit">Submit</button>
 
             </div>
         </form>
     </div>
+    <footer>
+        <ul class="footer-nav">
+            <ul class="footer-nav"><a target="_blank" href="https://www.linkedin.com/in/dwayne-b-321863197/"><i class="fab fa-linkedin-in"></i></a></ul>
+            <ul class="footer-nav"><a target="_blank" href="https://twitter.com/dwaynecantcode"><i class="fab fa-twitter"></i></a></ul>
+            <ul class="footer-nav"><a target="_blank" href=""><i class="fa fa-fw fa-envelope"></i></a></ul><!--contacts -->
+            <!--&copy maybe-->     
+        </ul>
+    </footer>
 </body>
 </html>
