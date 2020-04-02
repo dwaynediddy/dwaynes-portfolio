@@ -50,9 +50,9 @@ adobe Xd for my framework to layout what i wanted the pages to look like before 
 youtube.com and google.com added countless value to this webpage also. i also used trello again. actually quite handy.
 
 	<!-- Slides must include…	You must explain…	Marks
-R7	An overview/sitemap of all the pages on your website	The overall structure of your website and how different pages will be navigated	6
-R8	Wireframes or mockups of the pages of your website	Your decision making process relating to the overall aesthetic of your website	6
-R9	A list of components that will be used	How components and styling will engage the audience	6 -->
+R7	An overview/sitemap of all the pages on your website	The overall structure of your website and how different pages will be navigated	
+R8	Wireframes or mockups of the pages of your website	Your decision making process relating to the overall aesthetic of your website	
+R9	A list of components that will be used	How components and styling will engage the audience	 -->
 
 
 ## General project documentation is to be compiled as a single markdown file named README.md. This file should contain,

@@ -141,6 +141,17 @@ text-decoration: none;
 
     }
 }
+@media screen and (min-width: 840px){
+    section{
+        height: calc(100vh - 30px - 23px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px
+    }
+
+}
 
 
 
