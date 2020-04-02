@@ -29,7 +29,7 @@ header {
 aside {
     background: rgba(77, 77, 77, 0.05);
     grid-area: side;
-   min-height: 100vh;
+   min-height: 180vh;
 
 }
 
