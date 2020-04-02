@@ -72,16 +72,16 @@ body {
 }
 
 .single-box:nth-child(1) .img-area {
-    background-image: url(./src/images/icando.jpeg);
+    background-image: url(./images/icando.jpeg);
 }
 
 .single-box:nth-child(2) .img-area {
-    background-image: url(./src/images/enjoy.jpeg);
+    background-image: url(./images/enjoy.jpeg);
 }
 
 
 .single-box:nth-child(3) .img-area {
-    background-image: url( ./src/images/into-pic.jpeg);
+    background-image: url( ./images/into-pic.jpeg);
 }
 
 .top-text {
